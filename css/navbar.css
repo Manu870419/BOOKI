@@ -1,0 +1,54 @@
+/* NAVBAR */
+.a:hover {
+    color: var(--blue);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 30px;
+    border-top: 3px solid transparent;
+    
+}
+
+nav a:hover {
+    border-top-color: var(--blue);
+}
+#logo {
+    margin-right:auto;
+    padding: 0 30px;
+}
+
+.sub-nav {
+    display:flex;
+}
+
+.sub-nav a:hover {
+    color: var(--blue);
+}
+ 
+@media (max-width: 768px) {
+    .sub-nav {
+       order: 1;
+       flex-basis: 100%;
+    }
+    
+    .sub-nav a{
+        flex-basis: 100%;
+        text-align: center;
+        border-bottom:3px solid var(--lightgrey);
+    }
+
+
+    .sub-nav a:hover {
+        border-bottom-color:var(--blue);
+        border-top-color: transparent;
+    }
+
+   
+}

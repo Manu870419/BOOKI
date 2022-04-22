@@ -1,0 +1,52 @@
+/*APARTEMENTS-LIST*/
+
+.apartments-list{
+    display: flex;
+    gap: 15px;      
+  }
+
+  .apartments-list > div{
+    background-color: var(--lightgrey);
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  .apartments-list .city {
+    flex-basis: 66%;
+  }
+  .apartments-list .city a {
+    font-weight: bold;
+  }
+  
+  .apartments-list .popular {
+    flex-basis: 33%;
+  }
+  /* LIST-APARTMENTS-CITY*/
+
+.city-apartments-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  transition: all 200ms;
+}
+.city-apartments-list > div :hover{
+   transform: scale(1.02);
+}
+
+  
+  @media (max-width: 992px){
+    .apartments-list{
+      flex-direction: column;
+    }
+  
+    .popular {
+      order: -1;
+    }
+  }
+  @media (max-width: 768px) {
+    .apartments-list .popular-flex {
+      overflow: auto;
+    }
+  }

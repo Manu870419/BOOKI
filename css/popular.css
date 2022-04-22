@@ -1,0 +1,10 @@
+
+ /*POPULAR*/
+ .apartments-list .popular-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}

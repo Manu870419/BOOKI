@@ -1,0 +1,131 @@
+/*--ACTIVITIES--*/
+
+
+#activities h2 {
+  margin-top: 60px;
+}
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.activities-list .column {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.activities-list .bloc_simple{
+  transition: all 200ms;
+  height: 600px;
+  box-shadow: 0 0 10px 0 var(--darkshadow);
+}
+
+.activities-list .double_bloc{
+  height: 600px;
+}
+
+.activities-list > .bloc_simple:hover{
+  transform: scale(1.02);
+}
+
+.activities-list .column > .double:hover{
+  transform: scale(1.02);
+}
+
+.activities-list .column .column1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.activities-list .column .column1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:25px 25px 0 0 ;
+}
+.activities-list .column h3 {
+  padding: 21px;
+  margin: 0px;
+}
+
+.activities-list .column .double{
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 var(--darkshadow);
+  border-radius: 25px;
+  transition: all 200ms;
+}
+
+.activities-list .column .double .column1{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.activities-list .column .double .column1 img{
+width:100%;
+height: 216px;
+object-fit: cover;
+object-position: center;
+border-radius: 25px 25px 0 0;
+}
+
+.activities-list .column.double h3{
+  padding: 20px;
+  height: 50px;
+  margin: 0;
+}
+
+.activities-list .column.double h3{
+  padding: 15px;
+  margin: 0;
+  align-items: center;
+  overflow: auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+  .activities-list .column {
+    width: 47%;
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+ 
+
+  .activities-list .column {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+
+  .activities-list .column .column1{
+  height:80%;
+  }
+  
+  .activities-list .bloc_simple{
+    transition: all 200ms;
+    height: 280px;
+    box-shadow: 0 0 10px 0 var(--darkshadow);
+  }
+}
+
+ @media (max-width: 290px) {
+   .activities-list .column h3{
+    overflow: auto;
+  }
+ }

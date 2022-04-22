@@ -1,0 +1,40 @@
+ /* APARTMENT-CARD*/
+
+ .apartment-card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px;
+    box-shadow: 0 0 16px var(--darkshadow);
+    flex-grow: 1;
+    transition: all 0.2s;
+    flex-basis: 30%;
+    min-width: 225px;
+  }
+
+  .apartment-card img {
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .apartment-card p, 
+  .apartment-card h3,
+  .popular-description p,
+  .popular-description h3{
+    margin: 5px;
+  }
+ .blue {
+   color: var(--blue);
+ }
+
+ .grey {
+   color: var(--darkgrey);
+ }
+
+ @media (max-width: 768px) {
+  .apartments-list .popular-flex {
+    flex-direction: row;
+  }
+ }
