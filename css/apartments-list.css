@@ -31,7 +31,7 @@
   margin-bottom: 15px;
   transition: all 200ms;
 }
-.city-apartments-list > div :hover{
+.apartments-list .city > div :hover{
    transform: scale(1.02);
 }
 
@@ -50,3 +50,19 @@
       overflow: auto;
     }
   }
+  @media (max-width:350px) {
+    .apartments-list .city-apartments-list{
+      overflow: auto;
+    }
+  }
+  @media (max-width:250px) {
+    .apartments-list .city h3{
+      overflow: auto;
+    }
+  }
+  @media (max-width: 240px) {
+    .apartments-list .popular h3 {
+      overflow: auto;
+    }
+  }
+  

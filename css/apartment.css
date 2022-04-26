@@ -33,8 +33,4 @@
    color: var(--darkgrey);
  }
 
- @media (max-width: 768px) {
-  .apartments-list .popular-flex {
-    flex-direction: row;
-  }
- }
+ 

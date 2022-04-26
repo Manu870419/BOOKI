@@ -7,4 +7,9 @@
     flex-wrap: wrap;
     flex-basis: 100%;
     justify-content: space-evenly;
+    transition: all 200ms;
+}
+
+.apartments-list .popular > div :hover{
+    transform: scale(1.02);
 }

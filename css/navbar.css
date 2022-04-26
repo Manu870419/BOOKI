@@ -1,6 +1,7 @@
 /* NAVBAR */
 .a:hover {
     color: var(--blue);
+    border-top: 3px solid transparent;
 }
 
 nav {
@@ -11,14 +12,13 @@ nav {
 }
 
 nav a {
+    display: flex;
     padding: 30px;
     border-top: 3px solid transparent;
     
 }
 
-nav a:hover {
-    border-top-color: var(--blue);
-}
+
 #logo {
     margin-right:auto;
     padding: 0 30px;
@@ -31,6 +31,22 @@ nav a:hover {
 .sub-nav a:hover {
     color: var(--blue);
 }
+
+@media (min-width:992px) and (max-width:1900px) {
+    nav a:hover {
+        border-top-color: var(--blue);
+    }
+    .sub-nav a{
+        flex-basis: 100%;
+        text-align: center;
+        border-bottom:3px solid transparent;
+    }
+}
+@media (min-width:431px) and (max-width:992px) {
+    nav a:hover {
+        border-top-color:var(--blue);
+    }
+}
  
 @media (max-width: 768px) {
     .sub-nav {
@@ -41,14 +57,35 @@ nav a:hover {
     .sub-nav a{
         flex-basis: 100%;
         text-align: center;
-        border-bottom:3px solid var(--lightgrey);
+        border-bottom:3px solid transparent;
     }
 
 
-    .sub-nav a:hover {
+    .sub-nav :hover {
         border-bottom-color:var(--blue);
         border-top-color: transparent;
     }
-
-   
 }
+    @media (max-width:430px) {
+        #logo{
+         margin-right: auto;
+        }
+
+    .a {
+        order: 0;
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 15px;
+    }
+    
+    nav a:hover{
+        border-top-color:transparent;
+        border-bottom-color: var(--blue);
+    }
+    .a:hover{
+        border-top-color: transparent;
+        border-bottom-color: var(--blue);
+    }
+    }
